@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>论文 | 未来化学与材料科研中心</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&family=Nunito:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Logo">
+                <span>INSTITUTE</span>
+            </a>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html#technology" data-i18n="nav_tech">技术</a></li>
+                    <li><a href="applications.html" data-i18n="nav_apps">应用</a></li>
+                    <li><a href="publications.html" class="active" data-i18n="nav_pubs">论文</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">关于</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <button id="lang-btn" class="lang-switcher">EN</button>
+                <a href="#contact" class="btn btn-outline" data-i18n="nav_contact">联系我们</a>
+                <button class="mobile-toggle" id="mobile-toggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero subpage-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 data-i18n="pubs_hero_title">科学前沿与发现</h1>
+                    <p data-i18n="pubs_hero_desc">我们在机器学习与材料领域的最新研究成果，发表于世界顶级期刊。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="publications subpage-content">
+            <div class="container">
+                <div class="pub-list">
+                    <div class="pub-item reveal">
+                        <span class="pub-date">2024</span>
+                        <h3>Generative Flow Networks for Molecular Discovery</h3>
+                        <p class="pub-authors">Nature Machine Intelligence, Vol 12</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <h2 data-i18n="contact_title">准备好合作了吗？</h2>
+                    <p data-i18n="contact_desc">无论您是寻求技术合作还是人才加入，请随时与我们取得联系。</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" placeholder="您的电子邮箱" data-i18n="contact_placeholder" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact_btn">发送请求</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p data-i18n="footer_copy">&copy; 2025 未来化学与材料科研中心. 保留所有权利。</p>
+                <div class="social-links">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">X / Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

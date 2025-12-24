@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未来化学与材料科研中心 | 加速科研与发现</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&family=Nunito:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Logo">
+                <span>INSTITUTE</span>
+            </a>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html#technology" data-i18n="nav_tech">技术</a></li>
+                    <li><a href="applications.html" data-i18n="nav_apps">应用</a></li>
+                    <li><a href="publications.html" data-i18n="nav_pubs">论文</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">关于</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <button id="lang-btn" class="lang-switcher">EN</button>
+                <a href="#contact" class="btn btn-outline" data-i18n="nav_contact">联系我们</a>
+                <button class="mobile-toggle" id="mobile-toggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1 data-i18n="hero_title">利用人工智能加速 化学与材料 研发</h1>
+                    <p data-i18n="hero_desc">我们致力于通过最先进的生成式 AI 与物理仿真技术，发现推动能源转型与可持续发展的下一代新材料。</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary" data-i18n="hero_cta">探索我们的平台</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <svg class="molecule-svg floating" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                                <stop offset="0%" style="stop-color:#5B32EB;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0693E3;stop-opacity:0.2" />
+                            </radialGradient>
+                            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur stdDeviation="15" result="blur" />
+                                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                            </filter>
+                        </defs>
+                        <line x1="150" y1="150" x2="350" y2="350" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+                        <line x1="350" y1="150" x2="150" y2="350" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+                        <circle cx="250" cy="250" r="80" fill="url(#grad1)" filter="url(#glow)" />
+                        <circle cx="150" cy="150" r="40" fill="url(#grad1)" filter="url(#glow)" />
+                        <circle cx="350" cy="350" r="40" fill="url(#grad1)" filter="url(#glow)" />
+                        <circle cx="350" cy="150" r="40" fill="url(#grad1)" filter="url(#glow)" />
+                        <circle cx="150" cy="350" r="40" fill="url(#grad1)" filter="url(#glow)" />
+                    </svg>
+                </div>
+            </div>
+            <div class="hero-glow"></div>
+        </section>
+
+        <section class="statement">
+            <div class="container">
+                <h2 class="reveal" data-i18n="stat_text">
+                    一个将 深度学习 与 第一性原理 相结合的科研平台，旨在缩短工业研发周期。
+                </h2>
+            </div>
+        </section>
+
+        <section id="technology" class="features">
+            <div class="container">
+                <div class="section-title">
+                    <span data-i18n="feat_title">核心能力</span>
+                    <h2 data-i18n="feat_subtitle">我们如何改变发现过程</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card reveal">
+                        <div class="card-icon">🧪</div>
+                        <h3 data-i18n="feat_1_title">主动学习框架</h3>
+                        <p data-i18n="feat_1_desc">通过闭环反馈机制，不断优化 AI 模型，从每次实验中汲取知识。</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="card-icon">🧬</div>
+                        <h3 data-i18n="feat_2_title">生成式 GFlowNets</h3>
+                        <p data-i18n="feat_2_desc">利用尖端的生成算法在海量候选空间中搜索具有目标属性的新材料。</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="card-icon">⚡</div>
+                        <h3 data-i18n="feat_3_title">高通量仿真</h3>
+                        <p data-i18n="feat_3_desc">集成 DFT 模拟，在数字空间中快速验证分子与晶体结构的稳定性。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <h2 data-i18n="contact_title">准备好合作了吗？</h2>
+                    <p data-i18n="contact_desc">无论您是寻求技术合作还是人才加入，请随时与我们取得联系。</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" placeholder="您的电子邮箱" data-i18n="contact_placeholder" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact_btn">发送请求</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p data-i18n="footer_copy">&copy; 2025 未来化学与材料科研中心. 保留所有权利。</p>
+                <div class="social-links">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">X / Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
